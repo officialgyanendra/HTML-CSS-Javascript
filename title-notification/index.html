@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>App</title>
+    <style>
+        button {
+            padding: 10px;
+        }
+        .remove-btn {
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="
+            count++;
+            increse();
+
+            ">
+        Add
+    </button>
+    <button class="remove-btn js-remove-btn" onclick="count--; decrise()">Remove</button>
+    <div class="js-added-msg" onclick="decrise()"></div>
+    <script>
+        //Increase and decrease number on title
+        let count = 0;
+            const increse = function () {
+                    console.log(count);
+                    return document.title=`(${count}) New Message`;
+            }
+            const decrise = function(){
+                if(count>0){
+                    return document.title=`(${count}) New Message`;
+                } else {
+                    return document.title=`App`;
+                }
+            }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>App</title>
+    <style>
+        button {
+            padding: 10px;
+        }
+        .remove-btn {
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="
+        // document.querySelector('button').innerHTML = 'Loading...';
+            // setTimeout(function (){
+            //     console.log('function started');
+            //     document.querySelector('button').innerHTML = 'Finished';
+            // },1000)
+
+            // show added for 2 second only:============================
+            // document.querySelector('.js-added-msg').innerHTML = 'Added';
+            // setTimeout(function(){
+            //     document.querySelector('.js-added-msg').innerHTML = '';
+            // },2000)
+
+            //double click remove added immediately:======================
+            // let timeoutId;
+            // displayMsg();
+            // function displayMsg(){
+            //     const messageElement = document.querySelector('.js-added-msg');
+            //     messageElement.innerHTML = 'Added';
+            //     clearTimeout(timeoutId);
+            //     timeoutId = setTimeout(function () {
+            //         messageElement.innerHTML = '';
+            //     },2000);
+            // } 
+
+            //Display title new messagecount:============================
+            // console.log('interval start')
+            // setInterval(function (){
+            //     document.title = '(2) New Message';
+            // }, 1000)
+
+
+            count++;
+            increse();
+
+            ">
+        <!-- Start -->
+        Add
+    </button>
+    <button class="remove-btn js-remove-btn" onclick="count--; decrise()">Remove</button>
+    <div class="js-added-msg" onclick="decrise()"></div>
+    <script>
+        //Increase and decrease number on title
+        let count = 0;
+            const increse = function () {
+                    console.log(count);
+                    return document.title=`(${count}) New Message`;
+            }
+            const decrise = function(){
+                if(count>0){
+                    return document.title=`(${count}) New Message`;
+                } else {
+                    return document.title=`App`;
+                }
+            }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.first-row {
+    display: grid;
+    grid-template-columns: 200px 150px 100px;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+p {
+    font-size: 18px;
+    font-weight: 700;
+}
+input {
+    padding: 10px 10px;
+    font-size: 14px;
+}
+.add-btn {
+    font-size: 16px;
+    background: rgb(10, 205, 10);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px, 3px, 7px green;
+    cursor: pointer;
+}
+.show-elements {
+    display: grid;
+    grid-template-columns: 200px 150px 100px;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+.display-element {
+    display: grid;
+    grid-template-columns: 200px 150px 100px;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+.delete-btn {
+    font-size: 16px;
+    padding: 10px 20px;
+    background: rgb(161, 59, 3);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px, 3px, 7px green;
+    cursor: pointer;
+}
